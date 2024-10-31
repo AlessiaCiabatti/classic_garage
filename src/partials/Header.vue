@@ -45,6 +45,7 @@ export default {
       </ul>
     </div>
 
+    <!-- fai nuovo partials con solo hero -->
     <div class="hero">
       <img src="../assets/img/placeholder.jpg" alt="">
     </div>
