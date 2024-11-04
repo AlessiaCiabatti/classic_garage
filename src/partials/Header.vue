@@ -1,10 +1,10 @@
 <script>
 import Hero from '../components/Hero.vue';
-  export default {
-    components: {
-      Hero,
-    }
+export default {
+  components: {
+    Hero,
   }
+}
 </script>
 
 
@@ -15,25 +15,25 @@ import Hero from '../components/Hero.vue';
       <div class="bg_header d-flex justify-content-center">
         <div class="header d-flex justify-content-center">
           <div class="logo">
-            <img src="../assets/img/PROVA_DEFINITIVA_LOGO copia.png" alt="">
+            <img src="../assets/img/PROVA_DEFINITIVA_LOGO.png" alt="">
           </div>
 
           <div class="my_width">
             <ul class="menu nav-md d-flex justify-content-between">
               <li>
-                <a href="#">Home</a>
+                <a href="#">Home<i class="ms-2 fa-solid fa-house"></i></a>
               </li>
               <li>
-                <a href="#">Chi Siamo</a>
+                <a href="#">Chi Siamo<i class="ms-2 fa-solid fa-address-card"></i></a>
               </li>
               <li>
-                <a href="#">I Nostri Lavori</a>
+                <a href="#">I Nostri Lavori<i class="ms-2 fa-solid fa-car"></i></a>
               </li>
               <li>
-                <a href="#">Servizi</a>
+                <a href="#">Servizi<i class="ms-2 fa-solid fa-wrench"></i></a>
               </li>
               <li>
-                <a href="#">Contatti</a>
+                <a href="#" class="contatti">Contatti<i class="ms-2 fa-solid fa-phone"></i></a>
               </li>
             </ul>
 
@@ -42,32 +42,41 @@ import Hero from '../components/Hero.vue';
       </div>
     </div>
 
-
-    <div class="nav d-sm-block d-md-none">
-      <button class="menu-button" id="menuButton">Menu</button>
-      <div class="dropdown-content" id="dropdownMenu">
-        <a class="mt-5" href="#">Home</a>
-        <a href="#">Chi Siamo</a>
-        <a href="#">I Nostri Lavori</a>
-        <a href="#">Servizi</a>
-        <a href="#">Contatti</a>
+    <div class="nav-sm header d-block d-md-none d-flex align-items-center justify-content-around">
+      <div class="logo">
+        <img src="../assets/img/PROVA_DEFINITIVA_LOGO.png" alt="">
+      </div>
+      <div class="btn p-0">
+        <i class="fa-solid fa-gear"></i>
+        <button class="menu-button" id="menuButton">Menu</button>
+        <div class="dropdown-content" id="dropdownMenu">
+          <div class="menu_mobile">
+            <a href="#">Home<i class="ms-2 fa-solid fa-house"></i></a>
+            <a href="#">Chi Siamo<i class="ms-2 fa-solid fa-address-card"></i></a>
+            <a href="#">I Nostri Lavori<i class="ms-2 fa-solid fa-car"></i></a>
+            <a href="#">Servizi<i class="ms-2 fa-solid fa-wrench"></i></a>
+            <a href="#" class="contatti">Contatti<i class="ms-2 fa-solid fa-phone"></i></a>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- fai nuovo partials con solo hero -->
+    <!-- fai nuovo components con solo hero -->
     <Hero />
   </section>
 
 </template>
 
 <style>
-.bg_header {
-  background-color: #10274E;
+.bg_header,
+.nav-sm {
+  background: linear-gradient(to bottom, #193663, #264c80);
 }
 
 .header {
   height: 150px;
-  width: 90%;
+  width: 100%;
+  border-bottom: 2px solid #DB9129;
 }
 
 .logo img {
@@ -76,7 +85,6 @@ import Hero from '../components/Hero.vue';
 
 .my_width {
   width: 85%;
-  /* padding-left: 150px; */
 }
 
 .menu,
@@ -84,25 +92,26 @@ import Hero from '../components/Hero.vue';
   line-height: 150px;
 }
 
-.nav {
-  position: relative;
+.nav-sm {
+  height: 150px;
 }
 
-.nav-md {
+.nav-sm a {
   display: flex;
   align-items: center;
 }
 
-.menu-button {
-  background-color: #10274E;
+.fa-gear {
+  color: white;
+  font-size: 20px;
 }
 
 .menu-button,
 .nav-md {
+  background: none;
   width: 100%;
   color: white;
-  padding: 0px 16px;
-  font-size: 20px;
+  font-size: 25px;
   border: none;
   cursor: pointer;
 }
@@ -124,15 +133,25 @@ li {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #10274E;
-  z-index: 1;
+  background: linear-gradient(to bottom, #193663, #264c80);
+  z-index: 3;
   left: 0px;
-  top: 60px;
+  top: 150px;
   width: 100%;
   height: calc(100vh - 150px);
+  padding-top: 60px;
+}
+
+.menu_mobile {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .dropdown-content a {
+  font-size: 25px;
   color: #ffffff;
   text-decoration: none;
   border-bottom: 2px solid transparent;
@@ -145,17 +164,39 @@ li {
 
 .dropdown-content a:hover,
 .nav-md a:hover {
-  border-bottom: 2px solid #a16b12;
-  color: #a16b12;
+  border-bottom: 2px solid #DB9129;
+  color: #DB9129;
 }
 
+a.contatti {
+  color: #DB9129;
+}
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
 @media (min-width: 768px) {
-  .my_width {
-    padding-left: 50px;
+
+  .nav-md a,
+  li {
+    font-size: 20px;
+  }
+
+  .logo img {
+    width: 100px;
   }
 }
 
 @media (min-width: 1200px) {
+
+  .nav-md a,
+  li {
+    font-size: 25px;
+  }
+
   .my_width {
     padding-left: 150px;
   }
