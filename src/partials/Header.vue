@@ -1,7 +1,11 @@
 <script>
-export default {
+import { clickDropdown } from '../main';
 
-}
+export default {
+  mounted() {
+    clickDropdown(); // Richiama la funzione per gestire il dropdown
+  }
+};
 </script>
 
 
@@ -45,7 +49,7 @@ export default {
         <img src="../assets/img/PROVA_DEFINITIVA_LOGO.png" alt="">
       </div>
       <div class="btn p-0 d-flex align-items-center">
-        <button class="menu-button" id="menuButton">Menu</button>
+        <button class="menu-button" id="menuButton">Menu<i class="ms-2 pt-1 fa-solid fa-gear"></i></button>
         <div class="dropdown-content" id="dropdownMenu">
           <div class="menu_mobile">
             <RouterLink to="/">Home<i class="ms-2 fa-solid fa-house"></i></RouterLink>
@@ -56,7 +60,6 @@ export default {
             <a href="contatti" class="contatti">Contatti<i class="ms-2 fa-solid fa-phone"></i></a>
           </div>
         </div>
-        <i class="ms-2 pt-1 fa-solid fa-gear"></i>
       </div>
     </div>
   </section>
