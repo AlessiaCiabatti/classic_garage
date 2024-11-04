@@ -1,9 +1,6 @@
 <script>
-import Hero from '../components/Hero.vue';
 export default {
-  components: {
-    Hero,
-  }
+
 }
 </script>
 
@@ -21,19 +18,20 @@ export default {
           <div class="my_width">
             <ul class="menu nav-md d-flex justify-content-between">
               <li>
-                <a href="#">Home<i class="ms-2 fa-solid fa-house"></i></a>
+                <RouterLink to="/">Home<i class="ms-2 fa-solid fa-house"></i></RouterLink>
               </li>
               <li>
-                <a href="#">Chi Siamo<i class="ms-2 fa-solid fa-address-card"></i></a>
+                <RouterLink to="/chi-siamo">Chi Siamo<i class="ms-2 fa-solid fa-address-card"></i></RouterLink>
               </li>
               <li>
-                <a href="#">I Nostri Lavori<i class="ms-2 fa-solid fa-car"></i></a>
+                <RouterLink to="/lavori">I Nostri Lavori<i class="ms-2 fa-solid fa-car"></i></RouterLink>
               </li>
               <li>
-                <a href="#">Servizi<i class="ms-2 fa-solid fa-wrench"></i></a>
+                <RouterLink to="/servizi">Servizi<i class="ms-2 fa-solid fa-wrench"></i></RouterLink>
               </li>
               <li>
-                <a href="#" class="contatti">Contatti<i class="ms-2 fa-solid fa-phone"></i></a>
+                <!-- section id="contatti" -->
+                <a to="contatti" class="contatti">Contatti<i class="ms-2 fa-solid fa-phone"></i></a>
               </li>
             </ul>
 
@@ -46,23 +44,21 @@ export default {
       <div class="logo">
         <img src="../assets/img/PROVA_DEFINITIVA_LOGO.png" alt="">
       </div>
-      <div class="btn p-0">
-        <i class="fa-solid fa-gear"></i>
+      <div class="btn p-0 d-flex align-items-center">
         <button class="menu-button" id="menuButton">Menu</button>
         <div class="dropdown-content" id="dropdownMenu">
           <div class="menu_mobile">
-            <a href="#">Home<i class="ms-2 fa-solid fa-house"></i></a>
-            <a href="#">Chi Siamo<i class="ms-2 fa-solid fa-address-card"></i></a>
-            <a href="#">I Nostri Lavori<i class="ms-2 fa-solid fa-car"></i></a>
-            <a href="#">Servizi<i class="ms-2 fa-solid fa-wrench"></i></a>
-            <a href="#" class="contatti">Contatti<i class="ms-2 fa-solid fa-phone"></i></a>
+            <RouterLink to="/">Home<i class="ms-2 fa-solid fa-house"></i></RouterLink>
+            <RouterLink to="/chi-siamo">Chi Siamo<i class="ms-2 fa-solid fa-address-card"></i></RouterLink>
+            <RouterLink to="/lavori">I Nostri Lavori<i class="ms-2 fa-solid fa-car"></i></RouterLink>
+            <RouterLink to="/servizi">Servizi<i class="ms-2 fa-solid fa-wrench"></i></RouterLink>
+            <!-- section id="contatti" -->
+            <a href="contatti" class="contatti">Contatti<i class="ms-2 fa-solid fa-phone"></i></a>
           </div>
         </div>
+        <i class="ms-2 pt-1 fa-solid fa-gear"></i>
       </div>
     </div>
-
-    <!-- fai nuovo components con solo hero -->
-    <Hero />
   </section>
 
 </template>
@@ -70,7 +66,7 @@ export default {
 <style>
 .bg_header,
 .nav-sm {
-  background: linear-gradient(to bottom, #193663, #264c80);
+  background: linear-gradient(to bottom, #193663, #365a8b);
 }
 
 .header {
@@ -128,6 +124,11 @@ li {
   text-decoration: none;
   list-style: none;
   font-size: 25px;
+}
+
+.btn {
+    border: none;
+    cursor: pointer;
 }
 
 .dropdown-content {

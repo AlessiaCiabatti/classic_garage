@@ -1,5 +1,7 @@
 <script>
 import Header from './partials/Header.vue';
+// footer
+
   export default {
     components: {
       Header,
@@ -10,6 +12,8 @@ import Header from './partials/Header.vue';
 
 <template>
   <Header />
+  <router-view></router-view>
+  <!-- footer -->
 </template>
 
 <style>

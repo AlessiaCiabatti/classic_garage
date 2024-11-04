@@ -67,7 +67,7 @@ export default {
 
 <style>
 .hero img {
-  width: 100vw;
+  width: 100%;
   height: calc(100vh - 150px);
   object-fit: cover;
   object-position: 59% 100%;
@@ -75,7 +75,7 @@ export default {
 }
 
 .bg_hero {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
   height: calc(100vh - 150px);
   width: 100%;
   height: calc(100vh - 150px);
@@ -117,10 +117,10 @@ h1 {
 }
 
 p {
-  font-size: 2.7vw;
+  font-size: 2.6vw;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 100;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
 }
 
 @media (min-width: 768px) {
