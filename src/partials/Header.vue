@@ -34,7 +34,7 @@ export default {
               </li>
               <li>
                 <!-- section id="contatti" -->
-                <a to="contatti" class="contatti">Contatti<i class="ms-2 fa-solid fa-phone"></i></a>
+                <a href="#contatti" class="contatti">Contatti<i class="ms-2 fa-solid fa-pen"></i></a>
               </li>
             </ul>
 
@@ -57,7 +57,7 @@ export default {
             <RouterLink to="/lavori">I Nostri Lavori<i class="ms-2 fa-solid fa-car"></i></RouterLink>
             <RouterLink to="/servizi">Servizi<i class="ms-2 fa-solid fa-wrench"></i></RouterLink>
             <!-- section id="contatti" -->
-            <a to="contatti" class="contatti">Contatti<i class="ms-2 fa-solid fa-phone"></i></a>
+            <a href="#contatti" class="contatti">Contatti<i class="ms-2 fa-solid fa-pen"></i></a>
           </div>
         </div>
       </div>
@@ -185,7 +185,8 @@ a.contatti {
 
   .nav-md a,
   li {
-    font-size: 20px;
+    font-size: 18px;
+    margin-left: 20px;
   }
 
   .logo img {

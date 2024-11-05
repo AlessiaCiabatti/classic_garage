@@ -1,10 +1,12 @@
 <script>
 import Header from './partials/Header.vue';
+import Footer from './partials/Footer.vue';
 // footer
 
   export default {
     components: {
       Header,
+      Footer,
     }
   }
 </script>
@@ -13,7 +15,7 @@ import Header from './partials/Header.vue';
 <template>
   <Header />
   <router-view></router-view>
-  <!-- footer -->
+  <Footer />
 </template>
 
 <style>
