@@ -4,13 +4,12 @@ import { clickDropdown } from '../main';
 export default {
   mounted() {
     clickDropdown(); // Richiama la funzione per gestire il dropdown
-  }
+  },
 };
 </script>
 
 
 <template>
-
   <section>
     <div class="d-none d-md-block">
       <div class="bg_header d-flex justify-content-center">
@@ -20,7 +19,7 @@ export default {
           </div>
 
           <div class="my_width">
-            <ul class="menu nav-md d-flex justify-content-between">
+            <ul id="my_menu" class="menu nav-md d-flex justify-content-between">
               <li>
                 <RouterLink to="/">Home<i class="ms-2 fa-solid fa-house"></i></RouterLink>
               </li>
@@ -52,12 +51,13 @@ export default {
         <button class="menu-button" id="menuButton">Menu<i class="ms-2 pt-1 fa-solid fa-gear"></i></button>
         <div class="dropdown-content" id="dropdownMenu">
           <div class="menu_mobile">
-            <RouterLink to="/">Home<i class="ms-2 fa-solid fa-house"></i></RouterLink>
+            <RouterLink to="/">Home<i class="ms-2 fa-solid fa-house"></i>
+            </RouterLink>
             <RouterLink to="/chi-siamo">Chi Siamo<i class="ms-2 fa-solid fa-address-card"></i></RouterLink>
             <RouterLink to="/lavori">I Nostri Lavori<i class="ms-2 fa-solid fa-car"></i></RouterLink>
             <RouterLink to="/servizi">Servizi<i class="ms-2 fa-solid fa-wrench"></i></RouterLink>
             <!-- section id="contatti" -->
-            <a href="contatti" class="contatti">Contatti<i class="ms-2 fa-solid fa-phone"></i></a>
+            <a to="contatti" class="contatti">Contatti<i class="ms-2 fa-solid fa-phone"></i></a>
           </div>
         </div>
       </div>
@@ -130,8 +130,8 @@ li {
 }
 
 .btn {
-    border: none;
-    cursor: pointer;
+  border: none;
+  cursor: pointer;
 }
 
 .dropdown-content {
@@ -158,7 +158,7 @@ li {
   font-size: 25px;
   color: #ffffff;
   text-decoration: none;
-  border-bottom: 2px solid transparent;
+  /* border-bottom: 2px solid transparent; */
   transition: border-bottom 0.3s ease;
   display: flex;
   justify-content: center;
@@ -166,10 +166,9 @@ li {
   margin-bottom: 50px;
 }
 
-.dropdown-content a:hover,
-.nav-md a:hover {
+.router-link-exact-active {
   border-bottom: 2px solid #DB9129;
-  color: #DB9129;
+  color: #DB9129 !important;
 }
 
 a.contatti {
