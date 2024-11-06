@@ -12,16 +12,14 @@ export default {
 
 <template>
   <HeroHome />
-  <section class="home">
+  <section class="body_link">
     <div class="my_container text-center top_link">
       <div class="row align-items-start">
         <div class="col-sm-12 col-lg-6">
 
           <TopBodyLink little_title="PERCH&Eacute; SCEGLIERE" title_page="CLASSIC GARAGE" description="Specialisti nel restauro e manutenzione di macchine d'epoca, con passione e
-              precisione senza tempo.Classic Garage è il punto di riferimento per gli amanti delle auto d'epoca che
-              cercano un servizio di restauro e manutenzione di altissimo livello. Con passione e dedizione,
-              riportiamo ogni veicolo alla sua bellezza originale, preservando l'autenticità e il fascino senza tempo
-              che solo le auto classiche possono offrire." />
+              precisione senza tempo. Classic Garage è il punto di riferimento per gli amanti delle auto d'epoca che
+              cercano un servizio di restauro e manutenzione di altissimo livello." />
 
           <div class="list_check">
             <table>
@@ -59,7 +57,7 @@ export default {
 </template>
 
 <style>
-.home .top_link {
+.body_link .top_link {
   padding-top: 100px;
 }
 

@@ -12,6 +12,14 @@ export default {
     description: {
       type: String,
       required: true
+    },
+    second_description: {
+      type: String,
+      required: true
+    },
+    third_description: {
+      type: String,
+      required: true
     }
   }
 }
@@ -29,11 +37,17 @@ export default {
   <div>
     <p class="text-start">{{ description }}</p>
   </div>
+  <div>
+    <p class="text-start">{{ second_description }}</p>
+  </div>
+  <div>
+    <p class="text-start">{{ third_description }}</p>
+  </div>
 </template>
 
 
 <style>
-.home h1 {
+.body_link h1 {
   margin-top: 50px;
   font-size: 12vw;
 }
@@ -44,7 +58,7 @@ export default {
 
 }
 
-.home p {
+.body_link p {
   letter-spacing: 2px;
   margin-bottom: 50px;
   margin-top: 50px;
@@ -59,20 +73,16 @@ export default {
 
   }
 
-  .home h4 {
+  .body_link h4 {
     font-size: 2.8vw;
   }
 
-  .home h1 {
+  .body_link h1 {
     font-size: 7vw;
   }
 
-  .home p {
-    letter-spacing: 2px;
-    margin-bottom: 50px;
-    margin-top: 50px;
+  .body_link p {
     font-size: 2vw;
-    font-weight: 400;
   }
 }
 
@@ -84,20 +94,17 @@ export default {
 
   }
 
-  .home h4 {
+  .body_link h4 {
     font-size: 1.3vw;
   }
 
-  .home h1 {
+  .body_link h1 {
     font-size: 3.3vw;
   }
 
-  .home p {
-    letter-spacing: 2px;
+  .body_link p {
     margin-bottom: 80px;
-    margin-top: 50px;
     font-size: 1vw;
-    font-weight: 400;
     width: 80%;
   }
 }
