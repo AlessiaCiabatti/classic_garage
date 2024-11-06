@@ -7,8 +7,8 @@ export default {
 <template>
 
   <div id="contatti">
-    <div class="d-flex justify-content-center">
-      <h3>CONTATTACI<i class="ms-2 fa-solid fa-user-pen"></i></h3>
+    <div class="contattaci d-flex justify-content-sm-start">
+      <h3 class="text-white">Contattaci<i class="ms-2 fa-solid fa-user-pen"></i></h3>
     </div>
 
     <form>
@@ -28,16 +28,16 @@ h3 {
   padding: 0px;
   font-size: 6vw;
   font-weight: bold;
-  margin-top: 80px;
-  margin-bottom: 50px;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 form {
-  width: 90%;
-  margin: 0 auto;
+  /* width: 90%;
+  margin: 0 auto; */
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
 }
 
 .feedback-input {
@@ -50,7 +50,7 @@ form {
   /* background-color: transparent; */
   border: 2px solid #193663;
   transition: all 0.3s;
-  padding: 20px;
+  padding: 15px;
   margin-bottom: 18px;
   width: 100%;
   box-sizing: border-box;
@@ -62,7 +62,7 @@ form {
 }
 
 textarea {
-  height: 200px;
+  height: 100px;
   line-height: 150%;
   resize: vertical;
 }
@@ -70,7 +70,7 @@ textarea {
 [type="submit"] {
   /* font-family: 'Montserrat', Arial, Helvetica, sans-serif; */
   width: 40%;
-  background: #193663;
+  background: #DB9129;
   border-radius: 5px;
   border: 0;
   cursor: pointer;
@@ -84,15 +84,16 @@ textarea {
 }
 
 [type="submit"]:hover {
-  background: #2f5a96;
+  background: #f9b556;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4)
 }
 
 
 @media (min-width: 768px) {
   form {
-    width: 60%;
-    margin: 50px auto;
+    width: 80%;
+    /* margin: 0px auto; */
+    margin: 0px;
   }
 
   h3 {
@@ -103,13 +104,14 @@ textarea {
 
 @media (min-width: 1200px) {
   form {
-    width: 60%;
-    margin: 50px auto;
+    width: 70%;
+    /* margin: 0px auto; */
+    margin: 0px;
   }
 
   h3 {
     padding: 0px;
-    font-size: 2.5vw;
+    font-size: 2vw;
   }
 }
 </style>

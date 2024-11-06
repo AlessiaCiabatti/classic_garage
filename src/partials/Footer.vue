@@ -9,40 +9,36 @@ export default {
 
 <template>
 
-
   <footer>
-    <div class="contact_line">
-      <ContactForm />
-    </div>
-
-    <div class="bg_footer">
-      <div class="left d-flex flex-column align-items-center">
-
-        <div class="link_footer">
-          <RouterLink to="/">Home<i class="ms-2 fa-solid fa-house"></i>
-          </RouterLink>
-          <RouterLink to="/chi-siamo">Chi Siamo<i class="ms-2 fa-solid fa-address-card"></i></RouterLink>
-          <RouterLink to="/lavori">I Nostri Lavori<i class="ms-2 fa-solid fa-car"></i></RouterLink>
-          <RouterLink to="/servizi">Servizi<i class="ms-2 fa-solid fa-wrench"></i></RouterLink>
-          <a href="#contatti" class="contatti">Contatti<i class="ms-2 fa-solid fa-pen"></i></a>
-        </div>
-      </div>
-
-      <div class="right d-flex flex-column align-items-center">
-        <div>
-          <img class="logo" src="../assets/img/PROVA_DEFINITIVA_LOGO.png" alt="">
-        </div>
-        <div>
-          <p class="text-white text-center">Restauriamo macchine d'epoca con cura artigianale, preservando la
-            storia su quattro
-            ruote.
-          </p>
+    <div class="bg_footer footer_line">
+      <div class="my_container text-center">
+        <div class="row align-items-start">
+          <div class="col-sm-12 col-md-12 col-lg-8">
+            <ContactForm />
+          </div>
+          <div class="right_footer col-sm-12 col-md-12 col-lg-4">
+            <div class="contattaci d-flex flex-column align-items-start">
+              <h3 class="text-white mb-3">Informazioni<i class="ms-2 fa-solid fa-circle-info"></i></h3>
+              <div class="d-flex flex-column align-items-start text-white">
+                <p class="mb-0">VIA BOLOGNA 16</p>
+                <p class="mb-0">QUARRATA (PT)</p>
+                <p>51039</p>
+              </div>
+              <div class="d-flex flex-column align-items-start text-white">
+                <h3 class="mt-2 mb-3">Orari</h3>
+                <p class="mb-0">Lun - Ven</p>
+                <p>8.30 - 19.30</p>
+                <p class="mb-0">Sab</p>
+                <p>8.30 - 12.30</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
     <div class="text-center">
-      PROVA
+      <p class="copyright pt-2 mb-0">Copyright © 2024 Classic Garage</p>
+      <p class="copyright pb-2 mb-0 mt-2">Made by<a href="https://alessiaciabatti.altervista.org/" target="_blank"> Alessia Ciabatti</a><i class="fa-solid fa-arrow-left"></i></p>
     </div>
   </footer>
 </template>
@@ -50,125 +46,47 @@ export default {
 
 
 <style>
-.contact_line {
-  border-top: 2px solid #DB9129;
-  border-bottom: 2px solid #DB9129;
-}
-
 .bg_footer {
   background: linear-gradient(to top, #193663, #264c80);
+  padding-bottom: 70px;
 }
 
-footer h3 {
-  margin: 0;
-  padding: 50px 0px 30px 0;
+.footer_line {
+  border-top: 2px solid #DB9129;
 }
 
-footer img.logo {
-  width: 100px;
-  padding-bottom: 20px;
-  padding-top: 30px;
+.my_container {
+  width: 80%;
+  margin: 0 auto;
 }
 
-.link_footer {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
+.copyright{
+  font-size: 12px;
 }
 
-footer p {
-  padding-bottom: 50px;
-  margin: 0 3px;
-}
-
-ul {
-  padding-left: 0px;
-  line-height: 60px;
+.copyright a{
+  color: black;
   cursor: pointer;
-}
-
-.bg_footer a,
-.bg_footer li {
-  color: white;
   text-decoration: none;
-  list-style: none;
-  margin: 50px 0 30px 0;
-  font-size: 3.2vw;
 }
 
-footer .router-link-exact-active {
-  border-bottom: none;
+.copyright a:hover{
+  text-decoration: underline;
 }
-
-.line_white {
-  border: 2px solid white;
-  margin-top: 50px;
-}
-
 
 @media (min-width: 768px) {
-  .left {
-    width: 70%;
-    margin: 0 auto;
+  h3 {
+    padding: 0px;
+    font-size: 3vw;
   }
-
-  .right {
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  footer img.logo {
-    width: 150px;
-    padding-bottom: 20px;
-    padding-top: 60px;
-  }
-
-  .bg_footer a,
-  .bg_footer li {
-    color: white;
-    text-decoration: none;
-    list-style: none;
-    margin: 100px 0 30px 0;
-    font-size: 2.5vw;
-  }
-
-  .link_footer {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-
 }
 
 @media (min-width: 1200px) {
-  .left {
-    width: 60%;
-    margin: 0 auto;
-  }
-
-  .right {
-    width: 50%;
-    margin: 0 auto;
-  }
-
-  footer img.logo {
-    width: 180px;
-    padding-bottom: 20px;
-    padding-top: 100px;
-  }
-
-  footer p {
-    padding-bottom: 50px;
-  }
-
-  .bg_footer a,
-  .bg_footer li {
-    color: white;
-    text-decoration: none;
-    list-style: none;
-    margin: 100px 0 30px 0;
+  h3 {
+    padding: 0px;
     font-size: 1.5vw;
+    margin-top: 70px;
   }
-
 }
+
 </style>
