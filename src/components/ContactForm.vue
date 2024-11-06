@@ -6,7 +6,7 @@ export default {
 
 <template>
 
-  <div id="contatti">
+  <div>
     <div class="contattaci d-flex justify-content-sm-start">
       <h3 class="text-white">Contattaci<i class="ms-2 fa-solid fa-user-pen"></i></h3>
     </div>
