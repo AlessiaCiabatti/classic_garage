@@ -25,8 +25,8 @@ export default {
 
       <div class="height_lines d-flex flex-column justify-content-center">
         <div class="d-flex justify-content-end">
-          <div class="line_top bottom"></div>
-          <div class="line_top_second"></div>
+          <div class="line_bottom"></div>
+          <div class="line_bottom_second"></div>
         </div>
       </div>
 
@@ -96,11 +96,11 @@ export default {
   height: 50px;
 }
 
-.line_top {
+.line_top, .line_bottom_second {
   width: 170px;
 }
 
-.line_top_second {
+.line_top_second, .line_bottom {
   width: 235px;
   margin-top: 30px;
 }
@@ -117,9 +117,9 @@ h1 {
 }
 
 p {
-  font-size: 2.6vw;
+  font-size: 2.7vw;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   letter-spacing: 3px;
 }
 
@@ -148,7 +148,7 @@ p {
 
 @media (min-width: 1200px) {
   p {
-    font-size: 1.2vw;
+    font-size: 1.3vw;
     letter-spacing: 8px;
   }
 }

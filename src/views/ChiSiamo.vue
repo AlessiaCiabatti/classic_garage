@@ -28,7 +28,7 @@ export default {
 
           <TopBodyLink little_title="CHI SIAMO" title_page="CLASSIC GARAGE"
             description="Dal 2020 la nostra officina è un punto di riferimento per gli appassionati di macchine d'epoca. Fondata sulla passione per la meccanica classica e l'artigianalità, ci dedichiamo al restauro e alla manutenzione di veicoli storici, riportando alla luce la bellezza senza tempo delle auto di una volta."
-            second_description="Il nostro team di esperti meccanici e restauratori unisce competenze tecniche avanzate a un'attenzione scrupolosa per i dettagli. Ogni restauro è un'opera d'arte, eseguita con materiali originali e tecniche fedeli all'epoca del veicolo, garantendo autenticità e qualità in ogni fase del processo. Scegliendo noi, scegli professionalità, esperienza e una cura appassionata per ogni progetto." />
+            second_description="Uniamo competenze tecniche avanzate a un'attenzione scrupolosa per i dettagli. Ogni restauro è un'opera d'arte, eseguita con materiali originali e tecniche fedeli all'epoca del veicolo, garantendo autenticità e qualità in ogni fase del processo. Scegliendo noi, scegli professionalità, esperienza e una cura appassionata per ogni progetto." />
 
         </div>
 

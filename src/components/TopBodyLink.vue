@@ -47,6 +47,10 @@ export default {
 
 
 <style>
+.body_link h4 {
+  font-size: 6vw;
+}
+
 .body_link h1 {
   margin-top: 50px;
   font-size: 12vw;
@@ -54,8 +58,7 @@ export default {
 
 .vertical_line {
   border-left: 10px solid #DB9129;
-  height: 30px;
-
+  height: 5vh;
 }
 
 .body_link p {
@@ -63,18 +66,18 @@ export default {
   margin-bottom: 50px;
   margin-top: 50px;
   font-weight: 400;
+  font-size: 4.4vw;
 }
 
 
 @media (min-width: 768px) {
 
   .vertical_line {
-    font-size: 2.5vw;
-
+    height: 7vh;
   }
 
   .body_link h4 {
-    font-size: 2.8vw;
+    font-size: 4.5vw;
   }
 
   .body_link h1 {
@@ -82,7 +85,33 @@ export default {
   }
 
   .body_link p {
-    font-size: 2vw;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-weight: 400;
+    font-size: 3vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .vertical_line {
+    height: 5vh;
+  }
+
+  .body_link h4 {
+    font-size: 2.5vw;
+  }
+
+  .body_link h1 {
+    font-size: 5vw;
+  }
+
+  .body_link p {
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-weight: 400;
+    font-size: 2.5vw;
   }
 }
 
@@ -90,12 +119,12 @@ export default {
 @media (min-width: 1200px) {
 
   .vertical_line {
-    height: 1.8vw;
+    height: 2vw;
 
   }
 
   .body_link h4 {
-    font-size: 1.3vw;
+    font-size: 1.6vw;
   }
 
   .body_link h1 {
@@ -104,7 +133,7 @@ export default {
 
   .body_link p {
     margin-bottom: 80px;
-    font-size: 1vw;
+    font-size: 1.3vw;
     width: 80%;
   }
 }

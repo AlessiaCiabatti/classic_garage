@@ -186,7 +186,7 @@ a.contatti {
   .nav-md a,
   li {
     font-size: 18px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
   }
 
   .logo img {

@@ -15,7 +15,7 @@ export default {
   <section class="body_link">
     <div class="my_container text-center top_link">
       <div class="row align-items-start">
-        <div class="col-sm-12 col-lg-6">
+        <div class="col-sm-12 col-xl-6">
 
           <TopBodyLink little_title="PERCH&Eacute; SCEGLIERE" title_page="CLASSIC GARAGE" description="Specialisti nel restauro e manutenzione di macchine d'epoca, con passione e
               precisione senza tempo. Classic Garage è il punto di riferimento per gli amanti delle auto d'epoca che
@@ -42,7 +42,7 @@ export default {
 
         </div>
 
-        <div class="right d-flex justify-content-between col-sm-12 col-lg-6 p-0">
+        <div class="right d-flex justify-content-between col-sm-12 col-xl-6 p-0">
           <div class="d-flex justify-content-start">
             <img src="../assets/img/placeholder.jpg" alt="">
           </div>
@@ -63,17 +63,17 @@ export default {
 
 td {
   display: flex;
-  line-height: 35px;
-  margin: 0 30px;
-  font-size: 4vw;
+  line-height: 20px;
+  margin: 0 20px;
+  font-size: 4.7vw;
 }
 
 tr {
-  height: 35px;
+  height: 30px;
 }
 
 .check {
-  width: 30px;
+  width: 20px;
   margin-bottom: 50px;
 }
 
@@ -101,7 +101,12 @@ tr {
     display: flex;
     line-height: 35px;
     margin: 0 50px;
-    font-size: 3vw;
+    font-size: 4vw;
+  }
+
+  .check {
+    width: 35px;
+    margin-bottom: 50px;
   }
 
   .right img {
@@ -110,12 +115,18 @@ tr {
 
 }
 
+
 @media (min-width: 1200px) {
   td {
     display: flex;
     line-height: 35px;
     margin: 0 50px;
     font-size: 1.5vw;
+  }
+
+  .check {
+    width: 35px;
+    margin-bottom: 50px;
   }
 
 

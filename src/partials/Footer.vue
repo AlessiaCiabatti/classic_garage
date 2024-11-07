@@ -26,7 +26,7 @@ export default {
                   <p>51039</p>
                 </div>
                 <div class="d-flex flex-column align-items-start text-white">
-                  <h3 class="mt-2 mb-3">Orari</h3>
+                  <h3 class="mt-2 mb-3">Orari<i class="ms-2 fa-solid fa-clock"></i></h3>
                   <p class="mb-0">Lun - Ven</p>
                   <p>8.30 - 19.30</p>
                   <p class="mb-0">Sab</p>
@@ -50,7 +50,7 @@ export default {
 
 <style>
 .bg_footer {
-  background: linear-gradient(to top, #193663, #264c80);
+  background: linear-gradient(to top, #193663, #365a8b);
   padding-bottom: 70px;
   /* margin-top: 100px; */
 }
@@ -90,6 +90,10 @@ export default {
     padding: 0px;
     font-size: 1.5vw;
     margin-top: 70px;
+  }
+
+  .right_footer p{
+    font-size: 0.8vw;
   }
 }
 </style>
