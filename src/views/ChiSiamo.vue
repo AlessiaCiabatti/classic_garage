@@ -35,13 +35,13 @@ export default {
         <div class="right col-12 p-0">
           <div class="text-center">
             <div class="row d-flex justify-content-between">
-              <div class="prova col-sm-12 col-lg-4 my_margin">
+              <div class="my_w col-sm-12 col-lg-4 my_margin">
                 <img src="../assets/img/prova.jpg" alt="">
               </div>
-              <div class="prova col-sm-12 col-lg-4 my_margin">
+              <div class="my_w col-sm-12 col-lg-4 my_margin">
                 <img src="../assets/img/prova.jpg" alt="">
               </div>
-              <div class="prova col-sm-12 col-lg-4">
+              <div class="my_w col-sm-12 col-lg-4">
                 <img src="../assets/img/prova.jpg" alt="">
               </div>
             </div>
@@ -65,7 +65,7 @@ export default {
   margin-bottom: 50px;
 }
 
-.prova {
+.my_w {
   width: 100vw;
 }
 
@@ -84,7 +84,7 @@ export default {
     margin-bottom: 0px;
   }
 
-  .prova {
+  .my_w {
     width: 28vw;
   }
 
