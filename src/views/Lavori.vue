@@ -22,7 +22,7 @@ export default {
   <!-- passa l'immagine come props -->
 
   <section class="body_link lavori">
-    <div class="my_container text-center top_link">
+    <div class="my_container text-center">
       <div class="row align-items-start">
         <div class="col-12">
 

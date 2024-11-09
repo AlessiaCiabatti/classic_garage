@@ -8,6 +8,7 @@ import Home from './views/Home.vue';
 import ChiSiamo from './views/ChiSiamo.vue';
 import Lavori from './views/Lavori.vue';
 import Servizi from './views/Servizi.vue';
+import FormContact from './views/FormContact.vue';
 
 // 5: definisci le rotte
 const router = createRouter({
@@ -36,7 +37,12 @@ const router = createRouter({
       path: '/servizi',
       name: 'servizi',
       component: Servizi
-    }
+    },
+    {
+      path: '/form-contact',
+      name: 'form-contact',
+      component: FormContact,
+    },
   ]
 });
 

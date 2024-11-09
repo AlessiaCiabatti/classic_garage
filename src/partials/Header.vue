@@ -33,8 +33,7 @@ export default {
                 <RouterLink to="/servizi">Servizi<i class="ms-2 fa-solid fa-wrench"></i></RouterLink>
               </li>
               <li>
-                <!-- section id="contatti" -->
-                <a href="#contatti" class="contatti">Contatti<i class="ms-2 fa-solid fa-pen"></i></a>
+                <RouterLink to="/form-contact" class="contatti">Contatti<i class="ms-2 fa-solid fa-pen"></i></RouterLink>
               </li>
             </ul>
 
@@ -56,8 +55,7 @@ export default {
             <RouterLink to="/chi-siamo">Chi Siamo<i class="ms-2 fa-solid fa-address-card"></i></RouterLink>
             <RouterLink to="/lavori">I Nostri Lavori<i class="ms-2 fa-solid fa-car"></i></RouterLink>
             <RouterLink to="/servizi">Servizi<i class="ms-2 fa-solid fa-wrench"></i></RouterLink>
-            <!-- section id="contatti" -->
-            <a href="#contatti" class="contatti">Contatti<i class="ms-2 fa-solid fa-pen"></i></a>
+            <RouterLink to="/form-contact" class="contatti">Contatti<i class="ms-2 fa-solid fa-pen"></i></RouterLink>
           </div>
         </div>
       </div>

@@ -13,7 +13,7 @@ export default {
 <template>
   <HeroHome />
   <section class="body_link">
-    <div class="my_container text-center top_link">
+    <div class="my_container text-center">
       <div class="row align-items-start">
         <div class="col-sm-12 col-xl-6">
 
@@ -57,7 +57,7 @@ export default {
 </template>
 
 <style>
-.body_link .top_link {
+.body_link{
   padding-top: 100px;
 }
 
