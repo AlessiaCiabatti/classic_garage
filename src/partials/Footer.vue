@@ -63,7 +63,7 @@ export default {
               quattro ruote.</p>
           </div>
           <div class="text-white">
-            <a class="inst" href=""><i class="fa-brands fa-instagram"></i></a>
+            <a class="inst" href="https://www.instagram.com/classic__garage_?igsh=MWZkcDI2azRvZjFkMQ=="><i class="fa-brands fa-instagram"></i></a>
           </div>
         </div>
       </div>
