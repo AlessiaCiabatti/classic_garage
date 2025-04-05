@@ -26,9 +26,9 @@ export default {
               <li>
                 <RouterLink to="/chi-siamo">Chi Siamo<i class="ms-2 fa-solid fa-address-card"></i></RouterLink>
               </li>
-              <li>
+              <!-- <li>
                 <RouterLink to="/lavori">I Nostri Lavori<i class="ms-2 fa-solid fa-car"></i></RouterLink>
-              </li>
+              </li> -->
               <li>
                 <RouterLink to="/servizi">Servizi<i class="ms-2 fa-solid fa-wrench"></i></RouterLink>
               </li>
