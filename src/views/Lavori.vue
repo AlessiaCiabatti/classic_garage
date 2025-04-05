@@ -1,7 +1,7 @@
 <script>
 import HeroLink from '../components/HeroLink.vue';
 import TopBodyLink from '../components/TopBodyLink.vue';
-import image from '../assets/foto_classic_garage/image00007.jpeg'; // Importazione dell'immagine
+import image from '../assets/img/foto_classic_garage/image00007.jpeg'; // Importazione dell'immagine
 
 export default {
   components: {
@@ -14,27 +14,27 @@ export default {
 
       cardLavoriSection: [
         {
-          image: 'src/assets/foto_classic_garage/image00015.jpeg',
+          image: 'src/assets/img/foto_classic_garage/image00015.jpeg',
           title: 'REVISIONE CAMBI',
           description: 'Siamo anche specializzati nella revisione completa di cambi manuali e di differenziali e quando effettuiamo la revisione di un cambio ci occupiamo di reperire tutti i componenti che necessitino di essere sostituiti.',
         },
         {
-          image: 'src/assets/foto_classic_garage/image00006.jpeg',
+          image: 'src/assets/img/foto_classic_garage/image00006.jpeg',
           title: 'REVISIONE CARBURATORE',
           description: 'Siamo specializzati nella revisione integrale dei carburatori di vari brand come SOLEX, WEBER, DELL\'ORTO, ZENIT, ecc',
         },
         {
-          image: 'src/assets/foto_classic_garage/image00025_ritaglio.jpg',
+          image: 'src/assets/img/foto_classic_garage/image00025_ritaglio.jpg',
           title: 'COSTRUZIONE SCARICHI SU MISURA',
           description: 'Costruiamo anche sistemi di scarico su misura per tutti i tipi di esegenze sia in ferro che in acciaio inox con saldature a tig oppure MIG di altissima qualità.',
         },
         {
-          image: 'src/assets/foto_classic_garage/image00021.jpeg',
+          image: 'src/assets/img/foto_classic_garage/image00021.jpeg',
           title: 'FRESATURA E TORNITURA',
           description: 'Siamo specializzati nella tornitura e nella fresatura di ogni tipo di metallo con altissima precisione.',
         },
         {
-          image: 'src/assets/foto_classic_garage/image00016.jpeg',
+          image: 'src/assets/img/foto_classic_garage/image00016.jpeg',
           title: 'IMPIANTO ELETRICO',
           description: 'Quando restauriamo un\'auto ci occupiamo anche dell\'installazione dell\'impianto elettrico e del collegamento di esso sia che venga rigenerato sia nel caso che venga sostituito con uno nuovo.',
         },
@@ -59,7 +59,7 @@ export default {
           description: 'Siamo specializzati nel ripristino e nella riparazione di impianti di Iniezione Bosch K-Jetronic e Ke-Jetronic.',
         },
         {
-          image: 'src/assets/foto_classic_garage/image00023.jpeg',
+          image: 'src/assets/img/foto_classic_garage/image00023.jpeg',
           title: 'ZINCATURA',
           description: 'Ci occupiamo di fare zincare tutta la bulloneria e le varie parti che hanno perso di lucentezza, e verniciando tutti i componenti che lo necessitino.',
         },

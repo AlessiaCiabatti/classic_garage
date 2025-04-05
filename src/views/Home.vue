@@ -44,10 +44,10 @@ export default {
 
         <div class="right d-flex justify-content-between col-sm-12 col-xl-6 p-0">
           <div class="d-flex justify-content-start">
-            <img src="../assets/foto_classic_garage/image00017.jpeg" alt="">
+            <img src="../assets/img/foto_classic_garage/image00017.jpeg" alt="">
           </div>
           <div class="last_img d-flex justify-content-end">
-            <img class="second_img" src="../assets/foto_classic_garage/image00002.jpeg" alt="">
+            <img class="second_img" src="../assets/img/foto_classic_garage/image00002.jpeg" alt="">
           </div>
         </div>
       </div>
