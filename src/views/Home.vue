@@ -44,10 +44,10 @@ export default {
 
         <div class="right d-flex justify-content-between col-sm-12 col-xl-6 p-0">
           <div class="d-flex justify-content-start">
-            <img src="../assets/img/placeholder.jpg" alt="">
+            <img src="../assets/foto_classic_garage/image00017.jpeg" alt="">
           </div>
           <div class="last_img d-flex justify-content-end">
-            <img src="../assets/img/placeholder.jpg" alt="">
+            <img class="second_img" src="../assets/foto_classic_garage/image00002.jpeg" alt="">
           </div>
         </div>
       </div>
@@ -57,7 +57,7 @@ export default {
 </template>
 
 <style>
-.body_link{
+.body_link {
   padding-top: 100px;
 }
 
@@ -95,6 +95,10 @@ tr {
   margin-top: 100px;
 }
 
+img.second_img {
+  object-position: 75%;
+}
+
 @media (min-width: 768px) {
 
   td {
@@ -127,6 +131,10 @@ tr {
   .check {
     width: 35px;
     margin-bottom: 50px;
+  }
+
+  img.second_img {
+    object-position: 80%;
   }
 
 

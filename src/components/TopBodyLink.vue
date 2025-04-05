@@ -38,10 +38,11 @@ export default {
     <p class="text-start">{{ description }}</p>
   </div>
   <div>
-    <p class="text-start">{{ second_description }}</p>
+    <p  class="text-start" >{{ second_description }}</p>
   </div>
   <div>
-    <p class="text-start">{{ third_description }}</p>
+    <!-- Usa v-html per abilitare HTML in second_description -->
+    <p  class="text-start" v-html="third_description"></p>
   </div>
 </template>
 
@@ -57,7 +58,7 @@ export default {
 }
 
 .vertical_line {
-  border-left: 10px solid #DB9129;
+  border-left: 2px solid #DB9129;
   height: 5vh;
 }
 
@@ -133,8 +134,8 @@ export default {
 
   .body_link p {
     margin-bottom: 80px;
-    font-size: 1.3vw;
-    width: 80%;
+    font-size: 1.5vw;
+    width: 95%;
   }
 }
 </style>

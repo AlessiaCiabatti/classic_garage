@@ -31,7 +31,7 @@ export default {
       </div>
 
     </div>
-    <img src="../assets/img/placeholder.jpg" alt="">
+    <img src="../assets/foto_classic_garage/image00007.jpeg" alt="">
   </div>
 
   <!-- pc -->
@@ -60,7 +60,7 @@ export default {
       </div>
 
     </div>
-    <img src="../assets/img/placeholder.jpg" alt="">
+    <img src="../assets/foto_classic_garage/image00007.jpeg" alt="">
   </div>
 
 </template>
@@ -70,7 +70,7 @@ export default {
   width: 100%;
   height: calc(100vh - 150px);
   object-fit: cover;
-  object-position: 59% 100%;
+  object-position: 59% 70%;
   position: relative;
 }
 
@@ -148,8 +148,8 @@ p {
 
 @media (min-width: 1200px) {
   p {
-    font-size: 1.3vw;
-    letter-spacing: 8px;
+    font-size: 1.5vw;
+    letter-spacing: 6px;
   }
 }
 </style>

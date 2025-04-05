@@ -13,7 +13,7 @@ export default {
     <div class="footer_line"></div>
     <div class="my_container">
       <div class="row align-items-start footer_padding">
-        <div class="col-sm-12 col-md-4">
+        <div class="d-none d-md-block col-md-4">
           <div>
             <h3 class="text-white">Menu<i class="ms-2 fa-solid fa-ellipsis-vertical"></i></h3>
             <ul id="my_menu" class="nav-md ps-0">
@@ -63,7 +63,7 @@ export default {
               quattro ruote.</p>
           </div>
           <div class="text-white">
-            <a class="inst" href="https://www.instagram.com/classic__garage_?igsh=MWZkcDI2azRvZjFkMQ=="><i class="fa-brands fa-instagram"></i></a>
+            <a class="inst" href="https://www.instagram.com/classic__garage_?igsh=MWZkcDI2azRvZjFkMQ==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
           </div>
         </div>
       </div>
@@ -123,6 +123,7 @@ export default {
 
 .footer p {
   width: 70%;
+  letter-spacing: 3px;
 }
 
 .footer a {
@@ -151,7 +152,7 @@ export default {
   }
 
   .last_column {
-    height: 300px;
+    height: 250px;
   }
 
   .bottom_footer {
@@ -160,6 +161,12 @@ export default {
     align-items: center;
     line-height: 0px;
   }
+/* 
+  .footer .logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
 
 }
 

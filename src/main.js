@@ -31,13 +31,11 @@ export function clickDropdown() {
     });
 
     // aggiungo l'evento au link per chiudere il dropdown al click
-    dropdownLinks.forEach((link) =>{
-      link.addEventListener('click', () =>{
+    dropdownLinks.forEach((link) => {
+      link.addEventListener('click', () => {
         dropdownMenu.style.display = 'none',
-        dropdownOpen = false; //imposto lo stato su chiuso
+          dropdownOpen = false; //imposto lo stato su chiuso
       })
     })
   }
 };
-
-

@@ -1,7 +1,7 @@
 <script>
 import HeroLink from '../components/HeroLink.vue';
 import TopBodyLink from '../components/TopBodyLink.vue';
-import image from '../assets/img/placeholder.jpg'; // Importazione dell'immagine
+import image from '../assets/foto_classic_garage/image00007.jpeg'; // Importazione dell'immagine
 export default {
   components: {
     HeroLink,
@@ -9,7 +9,66 @@ export default {
   },
   data() {
     return {
-      image // Aggiungi l'immagine ai dati
+      image, // Aggiungi l'immagine ai dati
+
+      // crea array di oggetti per elementi dentro card
+      cardServiziSection: [
+        {
+          image: 'src/assets/foto_classic_garage/image00015.jpeg',
+          title: 'REVISIONE CAMBI',
+          description: 'Siamo anche specializzati nella revisione completa di cambi manuali e di differenziali e quando effettuiamo la revisione di un cambio ci occupiamo di reperire tutti i componenti che necessitino di essere sostituiti.',
+        },
+        {
+          image: 'src/assets/img/prova.jpg',
+          title: 'Titolo Card',
+          description: 'Siamo specializzati nella realizzazione di tubazioni in rame per l\'impianto frenante oppure per le linee benzina.',
+        },
+        {
+          image: 'src/assets/foto_classic_garage/image00006.jpeg',
+          title: 'REVISIONE CARBURATORE',
+          description: 'Siamo specializzati nella revisione integrale dei carburatori di vari brand come SOLEX, WEBER, DELL\'ORTO, ZENIT, ecc',
+        },
+        {
+          image: 'src/assets/foto_classic_garage/image00025.jpeg',
+          title: 'COSTRUZIONE SCARICHI SU MISURA',
+          description: 'Costruiamo anche sistemi di scarico su misura per tutti i tipi di esegenze sia in ferro che in acciaio inox con saldature a tig oppure MIG di altissima qualità.',
+        },
+        {
+          image: 'src/assets/foto_classic_garage/image00016.jpeg',
+          title: 'Titolo Card',
+          description: 'Quando restauriamo un\'auto ci occupiamo anche dell\'installazione dell\'impianto elettrico e del collegamento di esso sia che venga rigenerato sia nel caso che venga sostituito con uno nuovo.',
+        },
+        {
+          image: 'src/assets/img/prova.jpg',
+          title: 'Titolo Card',
+          description: 'Siamo specializzati nel ripristino e nella revisione di impianti frenanti a taburo con cilindretti idraulici e con meccanismo a corda o a bacchetta.',
+        },
+        {
+          image: 'src/assets/img/prova.jpg',
+          title: 'Titolo Card',
+          description: 'Ci occupiamo di far sostituire i ferodi della ganasce oppure di trovare componenti nuovi o rigenerati.',
+        },
+        {
+          image: 'src/assets/img/prova.jpg',
+          title: 'PINZE FRENI',
+          description: 'Ci occupiamo anche della revisione delle pinze dei freni per impianti frenanti a disco e della rettifica di tamburi o dischi dei freni.',
+        },
+        {
+          image: 'src/assets/foto_classic_garage/image00021.jpeg',
+          title: 'FRESATURA E TORNITURA',
+          description: 'Siamo specializzati nella tornitura e nella fresatura di ogni tipo di metallo con altissima precisione.',
+        },
+        {
+          image: 'src/assets/foto_classic_garage/image00029.jpeg',
+          title: 'Titolo Card',
+          description: 'Siamo specializzati nel ripristino e nella riparazione di impianti di Iniezione Bosch K-Jetronic e Ke-Jetronic.',
+        },
+        {
+          image: 'src/assets/img/prova.jpg',
+          title: 'ZINCATURA',
+          description: 'Ci occupiamo di fare zincare tutta la bulloneria e le varie parti che hanno perso di lucentezza, e verniciando tutti i componenti che lo necessitino.',
+        },
+      ],
     };
   }
 
@@ -26,161 +85,29 @@ export default {
 
         <div class="col-12">
           <TopBodyLink little_title="SERVIZI" title_page="CLASSIC GARAGE"
-            description="Specialisti nel restauro e manutenzione di macchine d'epoca, con passione e precisione senza tempo.
-            Sed bibendum ipsum dignissim. Integer ac dui at odio facilisis blandit ac non eros. Integer ac dui at odio facilisis blandit ac non eros." />
+            description="Qui alla Classic Garage siamo specializzati nella revisione completa dei motori dalle autovetture partendo da quelle degli anni 30 a carburatore, per passare alle versioni più moderne a iniezione meccanica fino ad arrivare a quelle ad iniezione elettronica.
+            Oltre all'aspetto meccanico curiamo anche l'aspetto estetico del motore oltre a quello di tutte le altre parti che compongono l'auto." />
         </div>
 
       </div>
 
-      <div class="container my-5">
-        <div class="row">
+      <div class="my-5">
+        <div class="row card_servizi">
+
           <!-- Card 1 -->
-          <div class="col-md-6 col-lg-4 mb-4  d-flex justify-content-center">
+          <!-- ciclo v-for elementi dentro card_serviziSection: [...} -->
+          <div v-for="(card, index) in cardServiziSection" :key="index"
+            class="col-md-12 col-lg-6 col-xl-4 mb-4 d-flex justify-content-center">
             <div class="card d-flex justify-content-center">
               <div class="card-body d-flex mt-3">
                 <div class="vertical_line"></div>
                 <div>
                   <div class="pt-3 my_ms mb-3 d-flex justify-content-start">
-                    <img src="../assets/img/check.png" class="card-img-top" alt="...">
+                    <img :src="card.image" class="card-img-top" alt="Card image" />
                   </div>
                   <div class="my_ms">
-                    <h4 class="text-start">TITOLO CARD</h4>
-                    <p class="card-text text-start">Specialisti nel restauro e manutenzione di macchine d'epoca, con
-                      passione e precisione senza tempo.
-                      Sed bibendum ipsum dignissim.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Card 2 -->
-          <div class="col-md-6 col-lg-4 mb-4  d-flex justify-content-center">
-            <div class="card d-flex justify-content-center">
-              <div class="card-body d-flex mt-3">
-                <div class="vertical_line"></div>
-                <div>
-                  <div class="pt-3 my_ms mb-3 d-flex justify-content-start">
-                    <img src="../assets/img/check.png" class="card-img-top" alt="...">
-                  </div>
-                  <div class="my_ms">
-                    <h4 class="text-start">TITOLO CARD</h4>
-                    <p class="card-text text-start">Specialisti nel restauro e manutenzione di macchine d'epoca, con
-                      passione e precisione senza tempo.
-                      Sed bibendum ipsum dignissim.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Card 3 -->
-          <div class="col-md-6 col-lg-4 mb-4  d-flex justify-content-center">
-            <div class="card d-flex justify-content-center">
-              <div class="card-body d-flex mt-3">
-                <div class="vertical_line"></div>
-                <div>
-                  <div class="pt-3 my_ms mb-3 d-flex justify-content-start">
-                    <img src="../assets/img/check.png" class="card-img-top" alt="...">
-                  </div>
-                  <div class="my_ms">
-                    <h4 class="text-start">TITOLO CARD</h4>
-                    <p class="card-text text-start">Specialisti nel restauro e manutenzione di macchine d'epoca, con
-                      passione e precisione senza tempo.
-                      Sed bibendum ipsum dignissim.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Card 4 -->
-          <div class="col-md-6 col-lg-4 mb-4  d-flex justify-content-center">
-            <div class="card d-flex justify-content-center">
-              <div class="card-body d-flex mt-3">
-                <div class="vertical_line"></div>
-                <div>
-                  <div class="pt-3 my_ms mb-3 d-flex justify-content-start">
-                    <img src="../assets/img/check.png" class="card-img-top" alt="...">
-                  </div>
-                  <div class="my_ms">
-                    <h4 class="text-start">TITOLO CARD</h4>
-                    <p class="card-text text-start">Specialisti nel restauro e manutenzione di macchine d'epoca, con
-                      passione e precisione senza tempo.
-                      Sed bibendum ipsum dignissim.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Card 5 -->
-          <div class="col-md-6 col-lg-4 mb-4  d-flex justify-content-center">
-            <div class="card d-flex justify-content-center">
-              <div class="card-body d-flex mt-3">
-                <div class="vertical_line"></div>
-                <div>
-                  <div class="pt-3 my_ms mb-3 d-flex justify-content-start">
-                    <img src="../assets/img/check.png" class="card-img-top" alt="...">
-                  </div>
-                  <div class="my_ms">
-                    <h4 class="text-start">TITOLO CARD</h4>
-                    <p class="card-text text-start">Specialisti nel restauro e manutenzione di macchine d'epoca, con
-                      passione e precisione senza tempo.
-                      Sed bibendum ipsum dignissim.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Card 6 -->
-          <div class="col-md-6 col-lg-4 mb-4  d-flex justify-content-center">
-            <div class="card d-flex justify-content-center">
-              <div class="card-body d-flex mt-3">
-                <div class="vertical_line"></div>
-                <div>
-                  <div class="pt-3 my_ms mb-3 d-flex justify-content-start">
-                    <img src="../assets/img/check.png" class="card-img-top" alt="...">
-                  </div>
-                  <div class="my_ms">
-                    <h4 class="text-start">TITOLO CARD</h4>
-                    <p class="card-text text-start">Specialisti nel restauro e manutenzione di macchine d'epoca, con
-                      passione e precisione senza tempo.
-                      Sed bibendum ipsum dignissim.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Card 7 -->
-          <div class="col-md-6 col-lg-4 mb-4  d-flex justify-content-center">
-            <div class="card d-flex justify-content-center">
-              <div class="card-body d-flex mt-3">
-                <div class="vertical_line"></div>
-                <div>
-                  <div class="pt-3 my_ms mb-3 d-flex justify-content-start">
-                    <img src="../assets/img/check.png" class="card-img-top" alt="...">
-                  </div>
-                  <div class="my_ms">
-                    <h4 class="text-start">TITOLO CARD</h4>
-                    <p class="card-text text-start">Specialisti nel restauro e manutenzione di macchine d'epoca, con
-                      passione e precisione senza tempo.
-                      Sed bibendum ipsum dignissim.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Card 8 -->
-          <div class="col-md-6 col-lg-4 mb-4  d-flex justify-content-center">
-            <div class="card d-flex justify-content-center">
-              <div class="card-body d-flex mt-3">
-                <div class="vertical_line"></div>
-                <div>
-                  <div class="pt-3 my_ms mb-3 d-flex justify-content-start">
-                    <img src="../assets/img/check.png" class="card-img-top" alt="...">
-                  </div>
-                  <div class="my_ms">
-                    <h4 class="text-start">TITOLO CARD</h4>
-                    <p class="card-text text-start">Specialisti nel restauro e manutenzione di macchine d'epoca, con
-                      passione e precisione senza tempo.
-                      Sed bibendum ipsum dignissim.</p>
+                    <h4 class="text-start">{{ card.title }}</h4>
+                    <p class="card-text text-start">{{ card.description }}</p>
                   </div>
                 </div>
               </div>
@@ -206,21 +133,28 @@ export default {
   margin-bottom: 50px
 }
 
-.servizi p {
+/* .servizi p {
   width: 100%;
+} */
+
+.servizi h4 {
+  margin-top: 50px;
 }
 
-.servizi img {
-  width: 100%;
+.servizi p.card-text.text-start {
+  margin-top: 20px;
 }
 
 .servizi .card {
-  width: 100%;
+  width: 80%;
   /* background-color: rgb(220, 220, 220); */
 }
 
 .servizi .card img {
-  width: 30%;
+  width: 170px;
+  height: 120px;
+  object-fit: cover;
+  object-position: 30% 10%;
 }
 
 .servizi .card-body {
@@ -233,10 +167,23 @@ export default {
 
 @media (min-width: 768px) {
 
-  .servizi .card {
-    /* width: 35vw; */
+  .servizi .card img {
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+    object-position: 30% 10%;
   }
 
+
+}
+
+@media (min-width: 992px) {
+  .servizi .card img {
+    width: 35vw;
+    height: 40vh;
+    object-fit: cover;
+    object-position: 30% 10%;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -244,6 +191,13 @@ export default {
     width: 100%;
     margin-bottom: 50px;
     /* background-color: rgb(220, 220, 220); */
+  }
+
+  .servizi .card img {
+    width: 22vw;
+    height: 30vh;
+    object-fit: cover;
+    object-position: 30% 10%;
   }
 }
 </style>

@@ -64,7 +64,7 @@ export default {
   width: 100%;
   height: 50vh;
   object-fit: cover;
-  object-position: 59% 100%;
+  object-position: 59% 80%;
   position: relative;
 }
 

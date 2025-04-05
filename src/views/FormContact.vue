@@ -1,6 +1,6 @@
 <script>
 import HeroLink from '../components/HeroLink.vue';
-import image from '../assets/img/placeholder.jpg'; // Importazione dell'immagine
+import image from '../assets/foto_classic_garage/image00007.jpeg'; // Importazione dell'immagine
 import TopBodyLink from '../components/TopBodyLink.vue';
 
 export default {
@@ -39,13 +39,25 @@ export default {
         const result = await response.json();
         this.message = result.message;
         this.success = result.status === 'success';
+
+        // Resetta il form solo se l'invio è stato un successo
+        if (this.success) {
+          this.resetForm();
+        }
       } catch (error) {
         this.message = 'Errore di rete. Riprova più tardi.';
         this.success = false;
       }
+    },
+    resetForm() {
+      this.form = {
+        name: '',
+        email: '',
+        message: ''
+      };
     }
   }
-};
+}
 </script>
 
 <template>
