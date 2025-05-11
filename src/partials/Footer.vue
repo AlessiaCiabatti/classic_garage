@@ -58,7 +58,7 @@ export default {
 
         <div class="last_column col-sm-12 col-md-4 d-flex flex-column justify-content-between">
           <div class="logo text-white">
-            <img src="/img/logo.jpg" alt="">
+            <img src="/img/logo.png" alt="">
             <p class="mt-3">Restauriamo macchine d'epoca con cura artigianale, preservando la storia su
               quattro ruote.</p>
           </div>
