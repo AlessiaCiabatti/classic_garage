@@ -1,7 +1,7 @@
 <script>
 import HeroLink from '../components/HeroLink.vue';
 import TopBodyLink from '../components/TopBodyLink.vue';
-import image from '../assets/img/foto_classic_garage/image00007.jpeg'; // Importazione dell'immagine
+import image from '/img/image00007.jpg'; // Importazione dell'immagine
 
 export default {
   components: {
@@ -14,59 +14,25 @@ export default {
 
       cardLavoriSection: [
         {
-          image: 'src/assets/img/foto_classic_garage/image00015.jpeg',
-          title: 'REVISIONE CAMBI',
-          description: 'Siamo anche specializzati nella revisione completa di cambi manuali e di differenziali e quando effettuiamo la revisione di un cambio ci occupiamo di reperire tutti i componenti che necessitino di essere sostituiti.',
+          image: 'img/ALFA ROMEO JUNIOR ZAGATO.JPG',
+          title: 'ALFA ROMEO JUNIOR ZAGATO - 1973',
+          // description: '',
         },
         {
-          image: 'src/assets/img/foto_classic_garage/image00006.jpeg',
-          title: 'REVISIONE CARBURATORE',
-          description: 'Siamo specializzati nella revisione integrale dei carburatori di vari brand come SOLEX, WEBER, DELL\'ORTO, ZENIT, ecc',
+          image: 'img/ALFA ROMEO GIULIETTA SPIDER.JPG',
+          title: 'ALFA ROMEO GIULIETTA SPIDER - 1962',
+          // description: '',
         },
         {
-          image: 'src/assets/img/foto_classic_garage/image00025_ritaglio.jpg',
-          title: 'COSTRUZIONE SCARICHI SU MISURA',
-          description: 'Costruiamo anche sistemi di scarico su misura per tutti i tipi di esegenze sia in ferro che in acciaio inox con saldature a tig oppure MIG di altissima qualità.',
+          image: 'img/fiat 1100 E SUPERGIOIELLO.JPG',
+          title: 'FIAT 1100 E SUPERGIOIELLO - 1949',
+          // description: '',
         },
         {
-          image: 'src/assets/img/foto_classic_garage/image00021.jpeg',
-          title: 'FRESATURA E TORNITURA',
-          description: 'Siamo specializzati nella tornitura e nella fresatura di ogni tipo di metallo con altissima precisione.',
-        },
-        {
-          image: 'src/assets/img/foto_classic_garage/image00016.jpeg',
-          title: 'IMPIANTO ELETRICO',
-          description: 'Quando restauriamo un\'auto ci occupiamo anche dell\'installazione dell\'impianto elettrico e del collegamento di esso sia che venga rigenerato sia nel caso che venga sostituito con uno nuovo.',
-        },
-        {
-          image: 'src/assets/img/prova.jpg',
-          title: 'IMPIANTI FRENANTI',
-          description: 'Siamo specializzati nel ripristino e nella revisione di impianti frenanti a taburo con cilindretti idraulici e con meccanismo a corda o a bacchetta.',
-        },
-        {
-          image: 'src/assets/img/prova.jpg',
-          title: 'GANASCE',
-          description: 'Ci occupiamo di far sostituire i ferodi della ganasce oppure di trovare componenti nuovi o rigenerati.',
-        },
-        {
-          image: 'src/assets/img/prova.jpg',
-          title: 'PINZE FRENI',
-          description: 'Ci occupiamo anche della revisione delle pinze dei freni per impianti frenanti a disco e della rettifica di tamburi o dischi dei freni.',
-        },
-        {
-          image: 'src/assets/img/prova.jpg',
-          title: 'IMPIANTI AD INIEZIONE',
-          description: 'Siamo specializzati nel ripristino e nella riparazione di impianti di Iniezione Bosch K-Jetronic e Ke-Jetronic.',
-        },
-        {
-          image: 'src/assets/img/foto_classic_garage/image00023.jpeg',
-          title: 'ZINCATURA',
-          description: 'Ci occupiamo di fare zincare tutta la bulloneria e le varie parti che hanno perso di lucentezza, e verniciando tutti i componenti che lo necessitino.',
-        },
-        {
-          image: 'src/assets/img/prova.jpg',
-          title: 'CREAZIONI',
-          description: 'Siamo specializzati nella realizzazione di tubazioni in rame per l\'impianto frenante oppure per le linee benzina.',
+          image: 'img/FERRARI 400I GIULIETTA SPIDER.JPG',
+          title: 'FERRARI 400I - 1983',
+          title2: 'ALFA ROMEO GIULIETTA SPIDER - 1963',
+          // description: '',
         },
       ]
     };
@@ -77,81 +43,91 @@ export default {
 
 <template>
   <HeroLink title="I Nostri Lavori" :image="image" />
-  <!-- passa l'immagine come props -->
 
   <section class="body_link lavori">
     <div class="my_container text-center">
       <div class="col-12">
-
         <TopBodyLink little_title="I NOSTRI LAVORI" title_page="CLASSIC GARAGE" />
-
       </div>
 
-      <div class="row align-items-start cardLacvoriSection">
-
-        <div v-for="(card, index) in cardLavoriSection" :key="inex" class="col-sm-12 col-xl-6 p-0">
-          <div class="card">
-            <img :src="card.image" class="card-img-top" alt="...">
-            <div class="card-body d-flex mt-5 my_mb">
-              <div class="vertical_line"></div>
-              <div class="my_ms">
-                <h4 class="text-start">{{ card.title }}</h4>
-                <p class="card-text text-start">{{ card.description }}</p>
-              </div>
-            </div>
+      <div class="lavori-list mt-5">
+        <div v-for="(card, index) in cardLavoriSection" :key="index"
+          class="lavori-item d-flex flex-column flex-md-row align-items-center mb-5"
+          :class="{ reverse: index % 2 !== 0 }">
+          <div class="lavori-image">
+            <img :src="card.image" :alt="card.title" />
+          </div>
+          <div class="lavori-content text-start">
+            <h4>{{ card.title }}</h4>
+            <h4>{{ card.title2 }}</h4>
+            <!-- <p>{{ card.description }}</p> -->
           </div>
         </div>
-
       </div>
     </div>
   </section>
-
 </template>
 
-<style>
-.card {
-  border: none;
-  /* width: 100%; */
+
+
+<style scoped>
+.lavori {
+  margin-bottom: 50px;
 }
 
-.card img {
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
+.lavori-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 40px;
 }
 
-.card-body {
-  padding-left: 0px;
+.lavori-item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  text-align: left;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.card .vertical_line {
+.lavori-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.lavori-image img {
+  width: 100%;
+  max-width: 600px;
+  height: 350px;
   height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-.my_ms {
-  margin-left: 25px;
+.lavori-content {
+  max-width: 500px;
+  padding: 10px;
 }
 
-.my_mb {
-  margin-bottom: 100px;
+.lavori-content h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
-@media (min-width: 1200px) {
+.lavori-content p {
+  font-size: 1rem;
+  color: #555;
+}
 
-  .lavori .card {
-    border: none;
-    width: 95%;
+@media (max-width: 768px) {
+  .lavori-item {
+    flex-direction: column !important;
+    text-align: center;
   }
 
-
-  .f-end {
-    display: flex;
-    justify-content: end;
-  }
-
-  img.card-img-top {
-    height: 55vh;
-    width: 90%;
-    object-fit: cover;
+  .lavori-content {
+    max-width: 100%;
   }
 }
 </style>

@@ -1,6 +1,6 @@
 <script>
 import HeroLink from '../components/HeroLink.vue';
-import image from '../assets/img/foto_classic_garage/image00007.jpeg'; // Importazione dell'immagine
+import image from '/img/image00007.jpg'; // Importazione dell'immagine
 import TopBodyLink from '../components/TopBodyLink.vue';
 
 export default {
@@ -30,14 +30,15 @@ export default {
             description="«Parlare di meccanica è raccontare la mia vita. Progetti, cambiamenti, nuovi inizi ma anche ricordi! Come il mio primo restauro di una Suzuki Samurai fatto con mio padre in un piccolo garage sotto casa. Da lì ha avuto tutto inizio!» Un'attrazione naturale per la meccanica in tutte le sue forme che, crescendo, trova la sua strada verso le macchine d'epoca. Nasce così la Classic Garage, fondata nel 2020 da un giovanissimo Damiano Sabba che, dopo un'esperienza decennale nel settore del restauro delle auto classiche, ha deciso di aprire la propria officina per dare sfogo alla sua immensa passione per il restauro meccanico delle auto." />
         </div>
 
-        <div class="img_chi_siamo col-sm-12">
+        <div class="row justify-content-center">
           <div class="col-sm-12 col-md-6 my_margin">
-            <img class="my_w" src="../assets/img/prova.jpg" alt="">
+            <img class="img_uniform" src="/img/image00035.jpeg" alt="Chi siamo 1">
           </div>
           <div class="col-sm-12 col-md-6 my_margin">
-            <img class="my_w" src="../assets/img/prova.jpg" alt="">
+            <img class="img_uniform" src="/img/image00001.jpeg" alt="Chi siamo 2">
           </div>
         </div>
+
       </div>
 
       <!-- seconda riga -->
@@ -50,18 +51,9 @@ export default {
             Siamo attrezzati per lavorare ogni tipo di metallo, dell'acciaio, al ferro, all'alluminio, all'ottone, al rame."
             second_description="Quando un componente non si trova più in commercio noi ve lo ricostruiamo su misura.
             Siamo inoltre attrezzati per saldare qualsiasi tipo di metallo. Effettuiamo suldature a TIG, MIG, a Stagno, a Castori.
-            Abbiamo inoltre una sabbiatrice attrezzata con microsfere di vetro per far tornare a nuovo i vostri componenti d'alluminio come collettori aspirazione, carburatori, scatole cambio e ogni altro pezzo in alluminio." 
-            third_description="<strong class='motto'>Il nostro motto è: la cura per il dettaglio prima di tutto, restauriamo tutto il salvabile.</strong>"/>
+            Abbiamo inoltre una sabbiatrice attrezzata con microsfere di vetro per far tornare a nuovo i vostri componenti d'alluminio come collettori aspirazione, carburatori, scatole cambio e ogni altro pezzo in alluminio."
+            third_description="<strong class='motto'>Il nostro motto è: la cura per il dettaglio prima di tutto, restauriamo tutto il salvabile.</strong>" />
         </div>
-
-        <!-- <div class="img_chi_siamo col-sm-12">
-          <div class="col-sm-12 col-md-6 my_margin">
-            <img class="my_w" src="../assets/img/prova.jpg" alt="">
-          </div>
-          <div class="col-sm-12 col-md-6 my_margin">
-            <img class="my_w" src="../assets/img/prova.jpg" alt="">
-          </div>
-        </div> -->
       </div>
 
     </div>
@@ -95,9 +87,15 @@ export default {
 
 .motto {
   font-weight: bold;
-  /* font-style: italic; */
-  /* Aggiungi altri stili se necessario */
 }
+
+.img_uniform {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  /* border-radius: 8px; */
+}
+
 
 @media (min-width: 768px) {
   .img_chi_siamo.col-sm-12 {
@@ -106,10 +104,7 @@ export default {
   }
 
   .my_w {
-    width: 90%;
+    width: 100%;
   }
 }
-
-
-@media (min-width: 1200px) {}
 </style>

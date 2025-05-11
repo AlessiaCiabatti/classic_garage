@@ -31,7 +31,7 @@ export default {
       </div>
 
     </div>
-    <img src="../assets/img/foto_classic_garage/image00007.jpeg" alt="">
+    <img src="/img/image00007.jpg" alt="">
   </div>
 
   <!-- pc -->
@@ -60,7 +60,7 @@ export default {
       </div>
 
     </div>
-    <img src="../assets/img/foto_classic_garage/image00007.jpeg" alt="">
+    <img src="/img/image00007.jpg" alt="">
   </div>
 
 </template>

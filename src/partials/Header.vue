@@ -15,7 +15,7 @@ export default {
       <div class="bg_header d-flex justify-content-center">
         <div class="header d-flex justify-content-center">
           <div class="logo">
-            <img src="../assets/img/PROVA_DEFINITIVA_LOGO.png" alt="">
+            <img src="/img/PROVA_DEFINITIVA_LOGO.png" alt="">
           </div>
 
           <div class="my_width">
@@ -26,9 +26,9 @@ export default {
               <li>
                 <RouterLink to="/chi-siamo">Chi Siamo<i class="ms-2 fa-solid fa-address-card"></i></RouterLink>
               </li>
-              <!-- <li>
+              <li>
                 <RouterLink to="/lavori">I Nostri Lavori<i class="ms-2 fa-solid fa-car"></i></RouterLink>
-              </li> -->
+              </li>
               <li>
                 <RouterLink to="/servizi">Servizi<i class="ms-2 fa-solid fa-wrench"></i></RouterLink>
               </li>
@@ -44,7 +44,7 @@ export default {
 
     <div class="nav-sm header d-block d-md-none d-flex align-items-center justify-content-around">
       <div class="logo">
-        <img src="../assets/img/PROVA_DEFINITIVA_LOGO.png" alt="">
+        <img src="/img/PROVA_DEFINITIVA_LOGO.png" alt="">
       </div>
       <div class="btn p-0 d-flex align-items-center">
         <button class="menu-button" id="menuButton">Menu<i class="ms-2 pt-1 fa-solid fa-gear"></i></button>

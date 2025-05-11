@@ -25,15 +25,15 @@ export default {
             <table>
               <tbody>
                 <tr>
-                  <th scope="row"><img class="check" src="../assets/img/check.png" alt=""></th>
+                  <th scope="row"><img class="check" src="/img/check.png" alt=""></th>
                   <td>Professionalità e Passione</td>
                 </tr>
                 <tr>
-                  <th scope="row"><img class="check" src="../assets/img/check.png" alt=""></th>
+                  <th scope="row"><img class="check" src="/img/check.png" alt=""></th>
                   <td>Attenzione ai Dettagli</td>
                 </tr>
                 <tr>
-                  <th scope="row"><img class="check" src="../assets/img/check.png" alt=""></th>
+                  <th scope="row"><img class="check" src="/img/check.png" alt=""></th>
                   <td colspan="2">Esperienza e Competenza Specializzata</td>
                 </tr>
               </tbody>
@@ -44,10 +44,10 @@ export default {
 
         <div class="right d-flex justify-content-between col-sm-12 col-xl-6 p-0">
           <div class="d-flex justify-content-start">
-            <img src="../assets/img/foto_classic_garage/image00017.jpeg" alt="">
+            <img src="/img/image00017.jpeg" alt="">
           </div>
           <div class="last_img d-flex justify-content-end">
-            <img class="second_img" src="../assets/img/foto_classic_garage/image00002.jpeg" alt="">
+            <img class="second_img" src="/img/image00002.jpeg" alt="">
           </div>
         </div>
       </div>
@@ -86,7 +86,7 @@ tr {
 }
 
 .right img {
-  width: 90%;
+  width: 95%;
   height: 375px;
   object-fit: cover;
 }

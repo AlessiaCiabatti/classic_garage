@@ -1,6 +1,6 @@
 <script>
 import HeroLink from '../components/HeroLink.vue';
-import image from '../assets/img/foto_classic_garage/image00007.jpeg'; // Importazione dell'immagine
+import image from '/img/image00007.jpg'; // Importazione dell'immagine
 import TopBodyLink from '../components/TopBodyLink.vue';
 
 export default {
