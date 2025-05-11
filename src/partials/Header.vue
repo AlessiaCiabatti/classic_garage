@@ -15,7 +15,7 @@ export default {
       <div class="bg_header d-flex justify-content-center">
         <div class="header d-flex justify-content-center">
           <div class="logo">
-            <img src="/img/PROVA_DEFINITIVA_LOGO.png" alt="">
+            <img src="/img/logo.jpg" alt="">
           </div>
 
           <div class="my_width">
@@ -44,7 +44,7 @@ export default {
 
     <div class="nav-sm header d-block d-md-none d-flex align-items-center justify-content-around">
       <div class="logo">
-        <img src="/img/PROVA_DEFINITIVA_LOGO.png" alt="">
+        <img src="/img/logo.jpg" alt="">
       </div>
       <div class="btn p-0 d-flex align-items-center">
         <button class="menu-button" id="menuButton">Menu<i class="ms-2 pt-1 fa-solid fa-gear"></i></button>
